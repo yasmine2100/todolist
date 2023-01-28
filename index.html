@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To Do List </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+   
+        <!-- table tasks -->
+        <div class="tableTasks">
+            <!--header  -->
+            <div class="header" >
+                <h1  >To Do List </h1>
+                <button  style="text-align: center; background-color: white; font-size: x-large;"class="circuler add" style="color: rgb(8, 8, 8); background-color:white;"> +</button>
+            </div>
+            <!--//header//  -->
+                <!--  search  and delete items -->
+                <div class="searchdlt">
+                <div class="searchConTainer">
+                    <input    onclick=" emptyplcholder()"oninput="searchTasks() "    class="form-control "  type="search"  placeholder="Search Tasks by Name" aria-label="Search">
+                    <label  style="font-size: x-large; color: white; font-family: Georgia, 'Times New Roman', Times, serif;"for="">Search</label>
+
+                </div>   
+                <div class="dltItems">
+            
+            <button class="deletall" onclick="deleteAll()" >Delete All</button>
+
+        </div>     
+    </div> 
+                   <!-- // search //-->
+                <!-- tasks    -->
+                <div id="tasks">
+                    <!-- task1 -->
+                    <template>
+                    <div class="task ">
+                        <!-- task name -->
+                        <div class="taskName">
+                        
+                            <h2 class="editable" contentEditable="true" >Enter text here</h2>                                                    
+                                <p> <span class="material-symbols-outlined">calendar_month</span> 10/2/2022 </p>
+                        
+                        
+                    </div>
+                         <!--// task name// -->
+                          <!-- task action-->
+                        <div class="taskAction">
+                            
+                            <button  class="circuler delet" >🗑</button>
+                            <button  class="circuler isdone" > 🗸</button>
+                            <button  class="circuler "> 🖉</button>
+                        </div>
+                        <!--// task action// -->
+                    </div>
+                     <!-- //task1// -->
+                    </template>
+                     
+                </div>
+                <!-- tasks    -->
+ <div>
+        </div>
+        <!--// table tasks// -->
+
+        
+        <script src="java.js"></script>
+
+    
+
+
+
+    
+    
+</body>
+</html>
